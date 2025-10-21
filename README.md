@@ -45,3 +45,12 @@ pip install email_validator
 
 Se quiser garantir outras dependências recomendadas, pode também instalar com o extra do WTForms assim:
 pip install wtforms[email]
+
+## Capturas de telas: 
+
+<img width="1728" height="914" alt="Captura de tela 2025-10-21 015905" src="https://github.com/user-attachments/assets/7c5fca73-4d47-4ad7-bb72-5efa4d584a9f" />
+<img width="1428" height="871" alt="Captura de tela 2025-10-21 015916" src="https://github.com/user-attachments/assets/65cdba06-820a-447c-843e-7f15694ce351" />
+<img width="1373" height="287" alt="Captura de tela 2025-10-21 015928" src="https://github.com/user-attachments/assets/ed73add5-fbfb-4334-b248-7632aeba03af" />
+<img width="1386" height="471" alt="Captura de tela 2025-10-21 015952" src="https://github.com/user-attachments/assets/42077b6f-85ed-4adc-b48f-26aee1fdb056" />
+<img width="1404" height="446" alt="Captura de tela 2025-10-21 020007" src="https://github.com/user-attachments/assets/9bbebfa3-a460-4428-93e3-f3470dee18f9" />
+<img width="1342" height="621" alt="Captura de tela 2025-10-21 020028" src="https://github.com/user-attachments/assets/78b7740e-3526-47f0-ad04-00fb05c311cb" />
