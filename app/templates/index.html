@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="p-4 bg-light rounded">
+  <h1>Bem-vindo ao Sistema Bibliotecário</h1>
+  <p>Projeto para fins educativos para o curso Análise e Projeto de Sistemas - TURMA 1
+Prof. Me. Rafael Santos - 13/10 A 04/11/2025 -                           Gerencie livros, usuários e empréstimos localmente.</p>
+  {% if not current_user.is_authenticated %}
+  <p><a class="btn btn-primary" href="{{ url_for('auth.login') }}">Entrar</a></p>
+  {% endif %}
+</div>
+{% endblock %}

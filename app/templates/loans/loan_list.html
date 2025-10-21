@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h3>Empréstimos</h3>
+  <a class="btn btn-sm btn-success" href="{{ url_for('loans.create_loan') }}">Registrar empréstimo</a>
+</div>
+<table class="table">
+<thead><tr><th>#</th><th>Livro</th><th>Usuário</th><th>Data</th><th>Status</th><th>Ações</th></tr></thead>
+<tbody>
+  {% for loan in pag.items %}
+  <tr>
+    <td>{{ loan.id }}</td>
+    <td>{{ loan.book.titulo if loan.book else '' }}</td>
+    <td>{{ loan.user.nome if loan.user else '' }}</td>
+    <td>{{ loan.data_emprestimo }}</td>
+    <td>{{ loan.status.value }}</td>
+    <td>
+      <a href="{{ url_for('loans.edit_loan', id=loan.id) }}" class="btn btn-warning btn-sm">Editar</a>
+      <form action="{{ url_for('loans.delete_loan', id=loan.id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir este empréstimo?');" style="display:inline;">
+          <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+{% endblock %}

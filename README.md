@@ -1,4 +1,4 @@
-# sistema_biblioteca_mark_mesquita
+# sistema_bibliotecário - IDEP.
 
 Versão local e educativa de um sistema de biblioteca para atender o projeto do curso Análise e Projeto de Sistemas - TURMA 1
 Prof. Me. Rafael Santos - 13/10 A 04/11/2025 desenvolvido em python & Flask.

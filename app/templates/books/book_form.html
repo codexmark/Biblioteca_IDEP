@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Cadastrar/Editar Livro</h3>
+<form method="post">
+  {{ form.hidden_tag() }}
+  <div class="mb-3">{{ form.titulo.label }} {{ form.titulo(class="form-control") }}</div>
+  <div class="mb-3">{{ form.autores.label }} {{ form.autores(class="form-control") }}</div>
+  <div class="mb-3">{{ form.isbn.label }} {{ form.isbn(class="form-control") }}</div>
+  <div class="mb-3">{{ form.quantidade.label }} {{ form.quantidade(class="form-control") }}</div>
+  <div><button class="btn btn-primary">Salvar</button></div>
+</form>
+{% endblock %}

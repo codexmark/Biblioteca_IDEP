@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Audit Log (últimos 200)</h3>
+<table class="table">
+<thead><tr><th>Data</th><th>Ação</th><th>Detalhes</th><th>Usuário</th></tr></thead>
+<tbody>
+  {% for l in logs %}
+  <tr><td>{{ l.timestamp }}</td><td>{{ l.action }}</td><td>{{ l.details }}</td><td>{{ l.actor.nome if l.actor else '' }}</td></tr>
+  {% endfor %}
+</tbody>
+</table>
+{% endblock %}
